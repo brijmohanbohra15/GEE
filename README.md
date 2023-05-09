@@ -4,6 +4,9 @@ This repository covers the google earth engine code from satellite image process
 ## SMCI
 A calculation google earth engine code of SMCI (soil moisture condition index) as for the soil moisture dataset of SMAP.
 
+## Check seed germination
+This GEE code determines about the seed germination of crop whether it is germinated or not in the given farm field. It also provides the date on which the crop seed is failed.
+
 ## Crop Map
 The crop map for Dibrugarh district, Assam is generated using multi-date opical and microwave sentinel data of Rabi season. Random forest machine learning algorithm is used to generate the crop map.
 
