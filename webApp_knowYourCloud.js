@@ -245,7 +245,7 @@ function filterData(){
     return dataset.filterDate(d, d.advance(1, 'day')).mosaic().set('system:index', date)
   })
   var mosaics_no= ee.ImageCollection.fromImages(mosaicList).map(function(image) {return image.clip(bound)})
-  var visImg = mosaics_no.map(addPercent).sort('percentage')
+  var visImg = mosaics_no.map(addPercent).sort('percentage').filter(ee.Filter.gte('percentage', 0))
     return visImg
 }
 
@@ -311,3 +311,7 @@ function chartNdviTimeSeries() {
 
 drawingTools.onDraw(ui.util.debounce(chartNdviTimeSeries, 500));
 drawingTools.onEdit(ui.util.debounce(chartNdviTimeSeries, 500));
+
+
+
+
