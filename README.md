@@ -19,5 +19,5 @@ This google earth engine code is generated to deteremine the forest fire impact 
 ### Multi Point extraction
 This google earth engine code executes the extraction of selected bands and indices values from sentinel 2 imagery for the given points.
 
-### Know Your Cloud
+### Know Your Cloud : WEB APP GEE
 This GEE web app visualize the sentinel 2 RGB images in ascending order of cloud percentage for selected date range and region with its date info
