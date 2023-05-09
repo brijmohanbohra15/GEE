@@ -7,6 +7,9 @@ A calculation google earth engine code of SMCI (soil moisture condition index) a
 ## Check seed germination
 This GEE code determines about the seed germination of crop whether it is germinated or not in the given farm field. It also provides the date on which the crop seed is failed.
 
+## Crop calendar 
+This GEE code shos the crop calendar in graphical form for a selected field based. This code plot the time-series of NDVI from sentinel -2 , thereafter linear trend is computed to detrend the series. This is followed by the harmonic smoothning of NDVI time series. Now, we can determinte the sown and harvested time of crop field by noticing the dip in the curve.
+
 ## Crop Map
 The crop map for Dibrugarh district, Assam is generated using multi-date opical and microwave sentinel data of Rabi season. Random forest machine learning algorithm is used to generate the crop map.
 
