@@ -51,3 +51,39 @@ print(SMCI_min,'SMCI minimum')
 
 var SMCI_max = SMCI.max().rename('SMCI_max');
 print(SMCI_max, 'SMCI_max')
+
+var stack = SMCI_min.addBands(SMCI_max).clip(roi)
+print(stack,'stack')
+
+///// Dataset visualization ////////
+
+// Index visualization
+var indexVis = {
+  min : 0.0,
+  max : 100,
+  palette :[]
+}
+
+// SMAP data visusalization
+var soilMoistureVis = {
+  min: 0.0,
+  max: 28.0,
+  palette: ['0300ff', '418504', 'efff07', 'efff07', 'ff0303'],
+};
+
+// Map.addLayer(soilMoisture, soilMoistureVis, 'Soil Moisture');
+Map.addLayer(stack, indexVis, 'Stack')
+// ROI visualization
+Map.addLayer(roi, 'ROI')
+Map.centerObject(roi, 8);
+
+// // // Export data // // //
+var projection = dataset.projection().getInfo();
+Export.image.toDrive({
+  image : stack,
+  scale : 10000,
+  region : roi,
+  crs: projection.crs,
+  crsTransform: projection.transform,
+  description : 'stack',
+  maxPixels: 1e13});
