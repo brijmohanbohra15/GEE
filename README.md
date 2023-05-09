@@ -4,6 +4,9 @@ This repository covers the google earth engine code from satellite image process
 ## SMCI
 A calculation google earth engine code of SMCI (soil moisture condition index) as for the soil moisture dataset of SMAP.
 
+## Crop Map
+The crop map for Dibrugarh district, Assam is generated using multi-date opical and microwave sentinel data of Rabi season. Random forest machine learning algorithm is used to generate the crop map.
+
 ## Forest Fire imapct analysis
 This google earth engine code is generated to deteremine the forest fire impact of Bijrani forest range, Nainital for the year 2021. 
 
