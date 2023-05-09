@@ -10,5 +10,8 @@ The crop map for Dibrugarh district, Assam is generated using multi-date opical 
 ## Forest Fire impact analysis
 This google earth engine code is generated to deteremine the forest fire impact of Bijrani forest range, Nainital for the year 2021. 
 
+## Multi Point extraction
+This google earth engine code executes the extraction of selected bands and indices values from sentinel 2 imagery for the given points.
+
 ## Know Your Cloud
 This GEE web app visualize the sentinel 2 RGB images in ascending order of cloud percentage for selected date range and region with its date info
